@@ -30,16 +30,67 @@
         <scene sceneID="0Yc-hx-y8j">
             <objects>
                 <viewController id="BAS-Jd-t03" customClass="ChannelVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PWl-6k-ij8">
+                    <view key="view" contentMode="scaleToFill" id="PWl-6k-ij8" customClass="GradientView" customModule="Smack" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-JD-3Cd">
+                                <rect key="frame" x="20" y="64" width="63" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Channels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOL-5P-ErD">
+                                <rect key="frame" x="20" y="107" width="51" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0A-TR-OWR">
+                                <rect key="frame" x="320" y="103" width="22" height="22"/>
+                                <state key="normal" image="addChannelButton"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-sy-hnc">
+                                <rect key="frame" x="20" y="807" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Cx6-QH-U8b"/>
+                                    <constraint firstAttribute="width" constant="75" id="RNk-jn-wgL"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pVe-Xc-36v">
+                                <rect key="frame" x="0.0" y="141" width="414" height="646"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddS-kw-9h7">
+                                <rect key="frame" x="115" y="828" width="46" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pVe-Xc-36v" firstAttribute="leading" secondItem="ExR-up-EOU" secondAttribute="leading" id="Fdr-pC-MbT"/>
+                            <constraint firstItem="gOL-5P-ErD" firstAttribute="leading" secondItem="ExR-up-EOU" secondAttribute="leading" constant="20" id="GSC-eU-Vr2"/>
+                            <constraint firstItem="pVe-Xc-36v" firstAttribute="top" secondItem="gOL-5P-ErD" secondAttribute="bottom" constant="20" id="Hhz-X0-FgM"/>
+                            <constraint firstItem="ddS-kw-9h7" firstAttribute="leading" secondItem="CUw-sy-hnc" secondAttribute="trailing" constant="20" id="NeI-01-sSU"/>
+                            <constraint firstItem="xDz-JD-3Cd" firstAttribute="top" secondItem="ExR-up-EOU" secondAttribute="top" constant="20" id="QxE-WX-Mdk"/>
+                            <constraint firstItem="ExR-up-EOU" firstAttribute="trailing" secondItem="pVe-Xc-36v" secondAttribute="trailing" id="TNt-lt-G9B"/>
+                            <constraint firstItem="CUw-sy-hnc" firstAttribute="bottom" secondItem="ExR-up-EOU" secondAttribute="bottom" constant="20" id="X2m-kg-EVw"/>
+                            <constraint firstItem="CUw-sy-hnc" firstAttribute="top" secondItem="pVe-Xc-36v" secondAttribute="bottom" constant="20" id="eTX-ZK-f2X"/>
+                            <constraint firstItem="CUw-sy-hnc" firstAttribute="leading" secondItem="ExR-up-EOU" secondAttribute="leading" constant="20" id="fEa-YM-9u7"/>
+                            <constraint firstItem="gOL-5P-ErD" firstAttribute="top" secondItem="xDz-JD-3Cd" secondAttribute="bottom" constant="20" id="kMB-9E-7cr"/>
+                            <constraint firstItem="ddS-kw-9h7" firstAttribute="centerY" secondItem="CUw-sy-hnc" secondAttribute="centerY" id="lkT-CW-86s"/>
+                            <constraint firstItem="xDz-JD-3Cd" firstAttribute="leading" secondItem="ExR-up-EOU" secondAttribute="leading" constant="20" id="qvc-GR-hQy"/>
+                            <constraint firstItem="ExR-up-EOU" firstAttribute="trailing" secondItem="q0A-TR-OWR" secondAttribute="trailing" constant="72" id="uIl-mb-Q4t"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ExR-up-EOU"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hle-33-ncV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123" y="-191"/>
+            <point key="canvasLocation" x="1121.7391304347827" y="-191.51785714285714"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="H9I-gI-ciL">
@@ -95,6 +146,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="menuProfileIcon" width="99" height="99"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>

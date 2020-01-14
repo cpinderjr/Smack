@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E52705E8EFE5EBBB93F6C91 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5B59154A742539C8C89499 /* Pods_Smack.framework */; };
+		71590CD823CCCE2F0057690B /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71590CD723CCCE2F0057690B /* CreateAccountVC.swift */; };
 		716D028F23C987C600BDA397 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D028E23C987C600BDA397 /* LoginVC.swift */; };
 		71ECF83723B69ED7004ED851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ECF83623B69ED7004ED851 /* AppDelegate.swift */; };
 		71ECF83923B69ED7004ED851 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ECF83823B69ED7004ED851 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71590CD723CCCE2F0057690B /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		716D028E23C987C600BDA397 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		71ECF83323B69ED7004ED851 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71ECF83623B69ED7004ED851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				71EFBA9C23BA86EA00DF706D /* ChatVC.swift */,
 				71EFBA9E23BA870800DF706D /* ChannelVC.swift */,
 				716D028E23C987C600BDA397 /* LoginVC.swift */,
+				71590CD723CCCE2F0057690B /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				716D028F23C987C600BDA397 /* LoginVC.swift in Sources */,
 				71EFBAAF23BAB01600DF706D /* GradientView.swift in Sources */,
 				71EFBAA523BA8DC300DF706D /* SWRevealViewController.m in Sources */,
+				71590CD823CCCE2F0057690B /* CreateAccountVC.swift in Sources */,
 				71F9F9B123C5189700281FAA /* Constants.swift in Sources */,
 				71ECF83923B69ED7004ED851 /* SceneDelegate.swift in Sources */,
 				71EFBA9F23BA870800DF706D /* ChannelVC.swift in Sources */,
